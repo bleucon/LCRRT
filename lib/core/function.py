@@ -52,8 +52,7 @@ def train(config, train_loaders, model, criterion, optimizer, epoch, start_time,
     #         tmp = len(train_loaders[key])
     #         cycle_key = key
         # enum_train_loaders[key] = enumerate(train_loaders[key])
-    for i, data in enumerate(zip(train_loaders['AFLW'], train_loaders['WFLW'], train_loaders['300W'],
-                                 train_loaders['COFW'])):
+    for i, data in enumerate(zip(*train_loaders.values())):
     # for i, data in enumerate(zip(train_loaders['300W'], cycle(train_loaders['COFW']))):
         tmp_loss = []
         for ii in range(len(train_loaders.keys())):
