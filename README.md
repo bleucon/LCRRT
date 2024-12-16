@@ -1,6 +1,6 @@
 # LCRRT
 
-This ia a PyTorch implemention of Landmark Cluster Region Reasoning Transformer for face landmark detection.
+This ia a PyTorch implemention of Landmark Cluster Relation Reasoning Transformer for face landmark detection.
 
 ## train
 
